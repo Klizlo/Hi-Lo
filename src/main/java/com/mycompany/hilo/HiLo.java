@@ -25,13 +25,17 @@ public class HiLo {
         do{
             int number = new Random().nextInt(100)+1;    // draw the number between 1 and 100 (closed interval)
             int guess = 0;
+            int numberOfTries = 0;
             while (guess != number){
                 System.out.println("Guess anumber between 1 and 100:");
                 guess = scr.nextInt();
+                numberOfTries++;
                 if(guess < number)
                     System.out.println(guess+" is too low. Try again.");
-                else if(guess == number)
+                else if(guess == number){
                     System.out.println(guess+" is correct. You win!");
+                    System.out.println("Number of tries: "+numberOfTries+"!");
+                }
                 else
                     System.out.println(guess+" is too high. Try again.");
             }
