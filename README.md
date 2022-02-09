@@ -6,8 +6,9 @@ Project is created using:
 * Java version: 14.0.2
 
 ## Version
-The project is in version: 1.1
-Counting the number of attempts has been added.
+The project is in version: 2.0
+The application runs in GUI form.
 
 ### Previous versions
 * v1.0: The game is running in console.
+* v1.1: Counting the number of attempts has been added.
